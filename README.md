@@ -1,6 +1,6 @@
-Name:Postgres2020<br/>
+Name:My Test<br/>
 Type: Rollout<br/>
-Description: New Postgres 2020 Connector<br/>
+Description: This is a very verbose description<br/>
 Known Issues: 70048, 71343<br/>
 Helpful Hints: 
 * Helpful Hint 1,
