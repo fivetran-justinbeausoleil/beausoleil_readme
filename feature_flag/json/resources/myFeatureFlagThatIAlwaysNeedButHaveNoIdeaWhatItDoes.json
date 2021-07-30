@@ -1,6 +1,7 @@
 {
+  "service": "service",
   "type": "Rollout",
-  "name": "My Test",
+  "name": "myFeatureFlagThatIAlwaysNeedButHaveNoIdeaWhatItDoes",
   "description": "This is a very verbose description",
   "helpfulHints": [
     "Helpful Hint 1",

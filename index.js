@@ -8,15 +8,16 @@ const MUSTACHE_MAIN_DIR = './main.mustache';/**
  * the data to be provided to Mustache
  * Notice the "name" and "date" property.
  */
-const parseMyData = (array) => array.map(item => `\n[${item}](https://fivetran.height.app/T-${item})`).join(', ');
-const bulletHints = (array) => array.map(hint => `\n* ${hint}`);
+const parseHeightIssues = (array) => array.map(item => `\n[${item}](https://fivetran.height.app/T-${item})`).join(', ');
+const bulletPointMarkup = (array) => array.map(hint => `\n* ${hint}`).join(' ');
 
 let DATA = {
+        service: myFeatureFlagThatIAlwaysNeedButHaveNoIdeaWhatItDoes.service,
         name: myFeatureFlagThatIAlwaysNeedButHaveNoIdeaWhatItDoes.name,
         type: myFeatureFlagThatIAlwaysNeedButHaveNoIdeaWhatItDoes.type,
         description: myFeatureFlagThatIAlwaysNeedButHaveNoIdeaWhatItDoes.description,
-        knownIssues: parseMyData(myFeatureFlagThatIAlwaysNeedButHaveNoIdeaWhatItDoes.issues),
-        helpfulHints: bulletHints(myFeatureFlagThatIAlwaysNeedButHaveNoIdeaWhatItDoes.helpfulHints),
+        knownIssues: parseHeightIssues(myFeatureFlagThatIAlwaysNeedButHaveNoIdeaWhatItDoes.issues),
+        helpfulHints: bulletPointMarkup(myFeatureFlagThatIAlwaysNeedButHaveNoIdeaWhatItDoes.helpfulHints),
         createDate: myFeatureFlagThatIAlwaysNeedButHaveNoIdeaWhatItDoes.createDate,
         endDate: myFeatureFlagThatIAlwaysNeedButHaveNoIdeaWhatItDoes.endDate
     };/**
