@@ -8,10 +8,8 @@ const MUSTACHE_MAIN_DIR = './main.mustache';/**
  * the data to be provided to Mustache
  * Notice the "name" and "date" property.
  */
-
-const parseMyData = (array) => array.map(item => +item).join(', ');
+const parseMyData = (array) => array.map(item => `\n[${item}](https://fivetran.height.app/T-${item})`).join(', ');
 const bulletHints = (array) => array.map(hint => `\n* ${hint}`);
-console.log(bulletHints(myFeatureFlagThatIAlwaysNeedButHaveNoIdeaWhatItDoes.helpfulHints))
 
 let DATA = {
         name: myFeatureFlagThatIAlwaysNeedButHaveNoIdeaWhatItDoes.name,

@@ -1,7 +1,10 @@
-Name:Postgres2020<br/>
+Name:My Test<br/>
 Type: Rollout<br/>
-Description: New Postgres 2020 Connector<br/>
-Known Issues: 70048, 71343<br/>
+Description: This is a very verbose description<br/>
+Known Issues: 
+[70048](https:&#x2F;&#x2F;fivetran.height.app&#x2F;T-70048), 
+[71343](https:&#x2F;&#x2F;fivetran.height.app&#x2F;T-71343), 
+[10015](https:&#x2F;&#x2F;fivetran.height.app&#x2F;T-10015)<br/>
 Helpful Hints: 
 * Helpful Hint 1,
 * Helpful Hint 2,
